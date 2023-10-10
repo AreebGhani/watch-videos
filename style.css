@@ -9,6 +9,19 @@
     color: #fefefe;
     width: 100%;
     overflow-x: hidden;
+    margin-top: 153px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+    background-color: #0a0b0f;
+    color: #fefefe;
 }
 
 .logo {
@@ -29,8 +42,8 @@
 }
 
 .menu a {
-    text-decoration: none !important;
-    color: #fefefe !important;
+    text-decoration: none;
+    color: #fefefe;
 }
 
 .menu button {
@@ -85,9 +98,17 @@
 
 .hero .desc {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 10%;
     width: 30%;
+}
+
+.hero .desc h5 {
+    font-size: 42px;
+}
+
+.hero .desc p {
+    font-size: 18px;
 }
 
 .hero .desc button {
@@ -98,11 +119,13 @@
     border-radius: 5px;
 }
 
-.videos {
+.videos,
+.bubbles {
     padding: 100px 50px 0 50px;
 }
 
-.videos h1 {
+.videos h1,
+.bubbles h1 {
     color: #fefefe;
     text-align: left;
     font-size: 28px;
@@ -112,15 +135,80 @@
     letter-spacing: 2px;
 }
 
-.videos .row div {
+.videos .row div,
+.bubbles .row div {
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.videos .row div img {
+.videos .row div img,
+.bubbles .row div img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: 200px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.bubbles .row div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f9bc23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+    background-color: #f9bc23d2;
+}
+
+.banner {
+    padding: 100px 50px 10px 50px;
+}
+
+.banner h1 {
+    color: #fefefe;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer,
+.copyright {
+    background-color: #0a0b0f;
+    color: #fefefe;
+}
+
+.footer a,
+.copyright a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.footer a:hover,
+.copyright a:hover {
+    text-decoration: underline;
+    color: #fefefed0;
 }

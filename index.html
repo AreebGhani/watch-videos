@@ -18,8 +18,8 @@
 <body>
     <div class="body">
         <!-- Header -->
-        <header class="row px-4 pt-4">
-            <div class="col-3">
+        <header class="header row px-4 pt-4">
+            <div class="col-4">
                 <a href="#"><img class="logo" src="./img/logo.png" alt="logo"></a>
             </div>
             <div class="col-8">
@@ -65,61 +65,107 @@
         </header>
         <!-- Featured Video -->
         <section class="hero">
-            <img src="./img/bg.png" alt="bg">
-            <div class="desc">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores tenetur optio hic sed
-                    excepturi vero unde perferendis fuga nulla temporibus officiis doloribus reiciendis animi
-                    consequatur, odio voluptatem! Officiis quod pariatur eum. Labore maxime impedit cupiditate quam
-                    pariatur consequuntur, natus dignissimos necessitatibus perspiciatis nostrum ratione officiis
-                    aperiam voluptas, unde hic.</p>
-                <button>More Details</button>
+            <div id="HeroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#HeroCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/bg.png" class="d-block w-100" alt="./img/bg.png">
+                        <div class="desc d-none d-md-block">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores tenetur optio hic
+                                sed
+                                excepturi vero unde perferendis fuga nulla temporibus officiis doloribus reiciendis
+                                animi
+                                consequatur, odio voluptatem! Officiis quod pariatur eum. Labore maxime impedit
+                                cupiditate quam
+                                pariatur consequuntur, natus dignissimos necessitatibus perspiciatis nostrum ratione
+                                officiis
+                                aperiam voluptas, unde hic.</p>
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/bg.png" class="d-block w-100" alt="./img/bg.png">
+                        <div class="desc d-none d-md-block">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores tenetur optio hic
+                                sed
+                                excepturi vero unde perferendis fuga nulla temporibus officiis doloribus reiciendis
+                                animi
+                                consequatur, odio voluptatem! Officiis quod pariatur eum. Labore maxime impedit
+                                cupiditate quam
+                                pariatur consequuntur, natus dignissimos necessitatibus perspiciatis nostrum ratione
+                                officiis
+                                aperiam voluptas, unde hic.</p>
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/bg.png" class="d-block w-100" alt="./img/bg.png">
+                        <div class="desc d-none d-md-block">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores tenetur optio hic
+                                sed
+                                excepturi vero unde perferendis fuga nulla temporibus officiis doloribus reiciendis
+                                animi
+                                consequatur, odio voluptatem! Officiis quod pariatur eum. Labore maxime impedit
+                                cupiditate quam
+                                pariatur consequuntur, natus dignissimos necessitatibus perspiciatis nostrum ratione
+                                officiis
+                                aperiam voluptas, unde hic.</p>
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#HeroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#HeroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
             </div>
         </section>
         <!-- Recently Watched -->
-        <section class="videos">
+        <section class="bubbles">
             <h1>Recently Watched</h1>
             <div class="row">
-                <div class="col-4">
+                <div class="col-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
-                    <img src="./img/bg.png" alt="thumbnail">
-                </div>
-                <div class="col-4">
-                    <img src="./img/bg.png" alt="thumbnail">
-                </div>
-                <div class="col-4">
+                <div class="col-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
             </div>
         </section>
         <!-- Continue Watching -->
-        <section class="videos">
+        <section class="bubbles">
             <h1>Continue Watching</h1>
             <div class="row">
-                <div class="col-4">
+                <div class="col-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
-                    <img src="./img/bg.png" alt="thumbnail">
-                </div>
-                <div class="col-4">
-                    <img src="./img/bg.png" alt="thumbnail">
-                </div>
-                <div class="col-4">
+                <div class="col-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
             </div>
@@ -148,11 +194,59 @@
                 </div>
             </div>
         </section>
+        <!-- Back To Top -->
+        <button id="backToTopBtn" title="Go to top">&#9650;</button>
+        <!-- Banner -->
+        <div class="banner">
+            <h1>The best site, join now!</h1>
+        </div>
+        <!-- Footer -->
+        <footer class="footer py-4 px-5 mx-5">
+            <div class="">
+                <div class="row gap-5">
+                    <div class="col-md-4">
+                        <img src="./img/logo.png" alt="Business Logo" class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Affiliate</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Affiliate Program</a></li>
+                            <li><a href="#">Become an Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Legal</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Company</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright -->
+        <div class="copyright text-center py-2">
+            <div class="container">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> All rights reserved. | <a
+                        href="#">Botfuncked</a>
+                </p>
+            </div>
+        </div>
     </div>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
