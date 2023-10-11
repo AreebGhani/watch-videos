@@ -18,11 +18,11 @@
 <body>
     <div class="body">
         <!-- Header -->
-        <header class="header row px-4 pt-4">
-            <div class="col-4">
+        <header class="header row pb-2 pb-lg-0 px-4 pt-1 pt-lg-4">
+            <div class="col-5 col-lg-4">
                 <a href="#"><img class="logo" src="./img/logo.png" alt="logo"></a>
             </div>
-            <div class="col-8">
+            <div class="col-7 col-lg-8">
                 <div class="text-end">
                     <select id="languageDropdown">
                         <option value="en">English</option>
@@ -58,11 +58,82 @@
                         <li><a href="#">CATEGORIES</a></li>
                         <li><a href="#">MEMBERS LOGIN</a></li>
                         <li><a href="#"><button>JOIN NOW</button></a></li>
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#" class="search-icon"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Nav Handler -->
+                <button class="mobileBtn mt-3 mt-md-4" id="sidebar-toggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <!-- Search Input Field -->
+            <div class="search-field">
+                <input type="search" id="searchInput" placeholder="Search...">
+            </div>
+            <!-- Mobile Navbar -->
+            <div class="mobile-menu">
+                <nav id="sidebar" class="py-4">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home"></i></a></li>
+                        <li><a href="#">VIDEOS</a></li>
+                        <li>
+                            <div class="sites-dropdown">
+                                <a href="#">SITES<i class="fas fa-caret-down"></i></a>
+                                <div class="sites-dropdown-content">
+                                    <a href="#">Bot Fucked</a>
+                                    <a href="#">Lerk N Jerk</a>
+                                    <a href="#">Bimbo Limo</a>
+                                    <a href="#">Gallery</a>
+                                    <a href="#">Store</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">CATEGORIES</a></li>
+                        <li><a href="#">MEMBERS LOGIN</a></li>
+                        <li><a href="#"><button>JOIN NOW</button></a></li>
+                        <li><a href="#" class="search-icon"><i class="fa fa-search"></i></a></li>
+                        <li>
+                            <select id="languageDropdown">
+                                <option value="en">English</option>
+                                <option value="de">Deutsch</option>
+                                <option value="es">Español</option>
+                                <option value="fr">Français</option>
+                                <option value="it">Italiano</option>
+                                <option value="nl">Nederlands</option>
+                                <option value="zh">Chinees</option>
+                                <option value="pl">Polski</option>
+                                <option value="pt">Portugues</option>
+                                <option value="ru">Pyccknn</option>
+                                <option value="sv">Svenska</option>
+                            </select>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <!-- Bottom Navbar -->
+        <nav class="bottom-menu">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
+                <li><a href="#"><i class="fa fa-video"></i></a></li>
+                <li>
+                    <div class="sites-dropup">
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                        <div class="sites-dropup-content">
+                            <a href="#">Bot Fucked</a>
+                            <a href="#">Lerk N Jerk</a>
+                            <a href="#">Bimbo Limo</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Store</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-folder"></i></a></li>
+                <li><a href="#"><i class="fa fa-user-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-user-plus"></i></a></li>
+                <li><a href="#" class="search-icon"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </nav>
         <!-- Featured Video -->
         <section class="hero">
             <div id="HeroCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -137,17 +208,17 @@
         <!-- Recently Watched -->
         <section class="bubbles">
             <h1>Recently Watched</h1>
-            <div class="row">
-                <div class="col-3">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
             </div>
@@ -155,17 +226,17 @@
         <!-- Continue Watching -->
         <section class="bubbles">
             <h1>Continue Watching</h1>
-            <div class="row">
-                <div class="col-3">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
             </div>
@@ -173,23 +244,23 @@
         <!-- Top Picks -->
         <section class="videos">
             <h1>Top Picks</h1>
-            <div class="row">
-                <div class="col-4">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-5 col-lg-4">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-5 col-lg-4">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-5 col-lg-4">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-5 col-lg-4">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-5 col-lg-4">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-5 col-lg-4">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
             </div>
@@ -202,37 +273,35 @@
         </div>
         <!-- Footer -->
         <footer class="footer py-4 px-5 mx-5">
-            <div class="">
-                <div class="row gap-5">
-                    <div class="col-md-4">
-                        <img src="./img/logo.png" alt="Business Logo" class="img-fluid mb-3">
-                    </div>
-                    <div class="col-md-2">
-                        <h5>Affiliate</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Affiliate Program</a></li>
-                            <li><a href="#">Become an Affiliate</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <h5>Legal</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <h5>Company</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
+            <div class="row gap-5 gap-md-4 gap-lg-4 gap-xl-5">
+                <div class="col-md-4">
+                    <img src="./img/logo.png" alt="Business Logo" class="img-fluid mb-3">
+                </div>
+                <div class="col-md-2">
+                    <h5>Affiliate</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
         <!-- Copyright -->
-        <div class="copyright text-center py-2">
+        <div class="copyright text-center pt-2 pb-md-2">
             <div class="container">
                 <p>&copy;
                     <script>document.write(new Date().getFullYear())</script> All rights reserved. | <a
