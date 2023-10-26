@@ -1,7 +1,7 @@
 var n = ["color: #e94486", "font-size: 18px", "font-weight: bold"].join(";")
-, o = ["line-height: 20px", "text-decoration: none", "color: #333", "font-size: 14px"].join(";");
+    , o = ["line-height: 20px", "text-decoration: none", "color: #333", "font-size: 14px"].join(";");
 function i() {
-  console.log("%cBotfucked \n%chttp://botfucked.com/", n, o)
+    console.log("%cBotfucked \n%chttp://botfucked.com/", n, o)
 }
 $(document).ready(function () {
     i();
@@ -32,5 +32,24 @@ $(document).ready(function () {
     });
     $('#backToTopBtn').click(function () {
         $('html, body').animate({ scrollTop: 0 }, 200);
+    });
+    $('.sites-trigger').click(function (e) {
+        e.stopPropagation();
+        if ($('.show-category').is(':visible')) {
+            $('.show-category').hide();
+        }
+        $('.show-sites').toggle();
+    })
+    $('.category-trigger').click(function (e) {
+        e.stopPropagation();
+        if ($('.show-sites').is(':visible')) {
+            $('.show-sites').hide();
+        }
+        $('.show-category').toggle();
+    })
+    $(document).on('click', function (e) {
+        if ($('.show-category, .show-sites').is(':visible')) {
+            $('.show-category, .show-sites').hide();
+        }
     });
 });
