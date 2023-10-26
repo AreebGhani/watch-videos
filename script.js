@@ -1,4 +1,10 @@
+var n = ["color: #e94486", "font-size: 18px", "font-weight: bold"].join(";")
+, o = ["line-height: 20px", "text-decoration: none", "color: #333", "font-size: 14px"].join(";");
+function i() {
+  console.log("%cBotfucked \n%chttp://botfucked.com/", n, o)
+}
 $(document).ready(function () {
+    i();
     $(".search-field").hide();
     $(".search-icon").click(function (event) {
         event.preventDefault();

@@ -18,28 +18,13 @@
 <body>
     <div class="body">
         <!-- Header -->
-        <header class="header row pb-2 pb-lg-0 px-4 pt-1 pt-lg-4">
-            <div class="col-5 col-lg-4">
+        <header class="header row px-4 pt-1 align-items-center">
+            <div class="col-4 col-lg-3">
                 <a href="#"><img class="logo" src="./img/logo.png" alt="logo"></a>
             </div>
-            <div class="col-7 col-lg-8">
-                <div class="text-end">
-                    <select id="languageDropdown">
-                        <option value="en">English</option>
-                        <option value="de">Deutsch</option>
-                        <option value="es">Español</option>
-                        <option value="fr">Français</option>
-                        <option value="it">Italiano</option>
-                        <option value="nl">Nederlands</option>
-                        <option value="zh">Chinees</option>
-                        <option value="pl">Polski</option>
-                        <option value="pt">Portugues</option>
-                        <option value="ru">Pyccknn</option>
-                        <option value="sv">Svenska</option>
-                    </select>
-                </div>
+            <div class="col-8 col-lg-9">
                 <!-- NavBar -->
-                <nav class="menu pt-4">
+                <nav class="menu">
                     <ul class="d-flex justify-content-around align-items-center">
                         <li><a href="#"><i class="fa fa-home"></i></a></li>
                         <li><a href="#">VIDEOS</a></li>
@@ -55,14 +40,66 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#">CATEGORIES</a></li>
+                        <li>
+                            <div class="sites-dropdown">
+                                <a href="#">CATEGORIES<i class="fas fa-caret-down"></i></a>
+                                <div class="sites-dropdown-content">
+                                    <a href="#">Pathan Sex</a>
+                                    <a href="#">Mian Wali Girls With Big Tits</a>
+                                    <a href="#">Amateur Porn</a>
+                                    <a href="#">Anal Sex</a>
+                                    <a href="#">Asian Girls</a>
+                                    <a href="#">Babes</a>
+                                    <a href="#">Big Tits</a>
+                                    <a href="#">Black Cooks</a>
+                                    <a href="#">Black Girls</a>
+                                    <a href="#">College Girls</a>
+                                    <a href="#">Stepdad Stepdaughter</a>
+                                    <a href="#">Foursome</a>
+                                    <a href="#">Girlfriends</a>
+                                    <a href="#">Girl Masturbate</a>
+                                    <a href="#">Hardcore</a>
+                                    <a href="#">Hot Girls</a>
+                                    <a href="#">Huge Cooks</a>
+                                    <a href="#">Latina Girls</a>
+                                    <a href="#">Lesbians</a>
+                                    <a href="#">Mom and Daughter</a>
+                                    <a href="#">Naked Girls</a>
+                                    <a href="#">Naked Women</a>
+                                    <a href="#">Sexy Girls</a>
+                                    <a href="#">StepSister StepBrother</a>
+                                    <a href="#">Sneeky Sex</a>
+                                    <a href="#">Sneaky Sex</a>
+                                    <a href="#">Teen Sex</a>
+                                    <a href="#">Thresome</a>
+                                    <a href="#">Young</a>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="#">MEMBERS LOGIN</a></li>
                         <li><a href="#"><button>JOIN NOW</button></a></li>
                         <li><a href="#" class="search-icon"><i class="fa fa-search"></i></a></li>
+                        <li>
+                            <div class="text-end">
+                                <select id="languageDropdown">
+                                    <option value="en">English</option>
+                                    <option value="de">Deutsch</option>
+                                    <option value="es">Español</option>
+                                    <option value="fr">Français</option>
+                                    <option value="it">Italiano</option>
+                                    <option value="nl">Nederlands</option>
+                                    <option value="zh">Chinees</option>
+                                    <option value="pl">Polski</option>
+                                    <option value="pt">Portugues</option>
+                                    <option value="ru">Pyccknn</option>
+                                    <option value="sv">Svenska</option>
+                                </select>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
                 <!-- Mobile Nav Handler -->
-                <button class="mobileBtn mt-3 mt-md-4" id="sidebar-toggle">
+                <button class="mobileBtn" id="sidebar-toggle">
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
@@ -206,7 +243,7 @@
             </div>
         </section>
         <!-- Recently Watched -->
-        <section class="bubbles">
+        <section class="videos">
             <h1>Recently Watched</h1>
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-md-4 col-lg-3">
@@ -223,8 +260,26 @@
                 </div>
             </div>
         </section>
-        <!-- Continue Watching -->
+        <!-- Category -->
         <section class="bubbles">
+            <h1>Category</h1>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="./img/bg.png" alt="thumbnail">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="./img/bg.png" alt="thumbnail">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="./img/bg.png" alt="thumbnail">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="./img/bg.png" alt="thumbnail">
+                </div>
+            </div>
+        </section>
+        <!-- Continue Watching -->
+        <section class="videos">
             <h1>Continue Watching</h1>
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-md-4 col-lg-3">
@@ -245,22 +300,28 @@
         <section class="videos">
             <h1>Top Picks</h1>
             <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-5 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-12 col-md-5 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-12 col-md-5 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-12 col-md-5 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-12 col-md-5 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
-                <div class="col-12 col-md-5 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="./img/bg.png" alt="thumbnail">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="./img/bg.png" alt="thumbnail">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
                     <img src="./img/bg.png" alt="thumbnail">
                 </div>
             </div>
